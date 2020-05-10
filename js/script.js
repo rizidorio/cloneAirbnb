@@ -60,7 +60,7 @@ function renderDiv(dados) {
     div.innerHTML = `
                 <img id="foto" src="${dados.photo}" class="card-img-top" alt="" />
                 <p id="tipo">${dados.property_type}</p>
-                <h6>${dados.name}</h6>
+                <h6 class="h6">${dados.name}</h6>
                 <p id="preco">Preço por noite: <b>R$ ${dados.price},00</b></p>   
     `;
     quartos.appendChild(div);  

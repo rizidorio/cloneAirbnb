@@ -137,12 +137,18 @@ input:disabled {
 
 /*Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
 @media (max-width: 575.98px) { 
-    .card {
-        max-width: 390px;
+    .h6 {
+        font-size: 0.8rem !important;
+        margin-bottom: 1px !important;
+    }
+
+    #preco {
+        font-size: 1rem !important;
     }
 
     #quartos {
         justify-content: center;
+        margin-left: 8%;
     }
 
     #rodape {
@@ -172,6 +178,8 @@ input:disabled {
         max-width: 500px;
         margin: 0 auto !important;
     }
+
+
  }
 
 /* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
