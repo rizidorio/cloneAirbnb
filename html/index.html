@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Aluguéis por Temporada - Airbnb(Clone)</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+              integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/png" href="../img/Airbnb_icon.png">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header><!--Inicio do Cabeçalho-->
+                <div id="cabecalho">
+                    <form class="form-row">
+                        <div id="divLogo" class="col-md-2 mt-2">
+                            <a href="index.html">
+                                <img id="logo" src="../img/airbnb_logo.png" alt="Logotipo" width="150px">
+                            </a>
+                        </div>
+                        <div id="divLocal" class="col-md-3 mb-2 mt-2">
+                            <label for="local" class="">Local</label>
+                            <input type="text" class="form-control" id="local" placeholder="Rio de Janeiro" disabled>
+                        </div>
+                        <div id="cki" class="col-md-2 mb-2 mt-2">
+                            <label for="checkin" class="">Check-in</label>
+                            <input type="text" class="form-control" id="checkin" placeholder="30/10/2020" disabled>
+                        </div>
+                        <div id="cko" class="col-md-2 mb-2 mt-2">
+                            <label for="checkout" class="">Checkout</label>
+                            <input type="text" class="form-control" id="checkout" placeholder="03/11/2020" disabled>
+                        </div>
+                        <div id="cko" class="col-md-2 mb-2 mt-2">
+                            <label for="hospedes" class="">Hóspedes</label>
+                            <input type="text" class="form-control" id="checkout" placeholder="2 hóspedes" disabled>
+                        </div>
+                        <div id="botao" class="mb-2">
+                            <button type="button" class="btn btn-sm botoes" data-toggle="modal" data-target="#modalBuscar">
+                                <i class="fa fa-search"></i> Buscar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </header><!--Fim do Cabeçalho-->
+
+            <!--Inicio Conteudo-->
+            <div id="retorno" class="mt-2">
+                <p>Mais de 300 acomodações - 30 de out. - 3 de nov. 2 hóspedes</p>
+                <h1 class="h2">Acomodações em Rio de Janeiro</h1>
+            </div>
+            <div id="filtros">
+                <button type="button" class="btn btn-outline-secondary mr-2 mb-3 mt-2 filtro" disabled>Flexbilidade de cancelamento</button>
+                <button type="button" class="btn btn-outline-secondary mr-2 mb-3 mt-2 filtro" disabled>Tipo de lugar</button>
+                <button type="button" class="btn btn-outline-secondary mr-2 mb-3 mt-2 filtro" disabled>Preço</button>
+                <button type="button" class="btn btn-outline-secondary mb-3 mt-2 filtro" disabled>Mais filtros</button>
+            </div>
+            <div id="quartos" class="mb-4"><!--Inicio dos Cards-->
+                <h4 class="alerta">Carregando imóveis...</h4>
+                <!--Carregamento de Cards via script-->
+            </div><!--Fim dos Cards-->
+            
+            <!--Inicio Paginação-->
+            <nav aria-label="Navegação de página exemplo">
+                <div class="pagination justify-content-center mb-3">
+                    <button type="button" id="anterior" class="btnPag btn  mr-2" title="Voltar">Anterior</button>
+                    <button type="button" id="proximo" class="btnPag btn" title="Próximo">Próximo</button>
+                </div>
+            </nav> <!--Fim paginação-->
+            <!--Fim do conteudo-->
+        </div>
+        <footer><!--Inicio rodapé-->
+            <div id="rodape">
+                <p class="mt-2">&copy; Copyright 2020 Airbnb, version by Ricardo Izidorio Ferreira</p>
+            
+                <div id="redeSocial">
+                    <a target="blank" href="https://github.com/rizidorio">
+                        <img id="logoGithub" src="../img/github-logo.png" width="100px" class="mr-2 mt-1">
+                    </a>
+                    <a target="blank" href="https://www.instagram.com/ricardoizidorio/?hl=pt-br">
+                        <img id="logoInstagram" src="../img/instagram-logo-12.png" width="120px" class="mr-2 mt-1">
+                    </a>
+                    <a target="blank" href="https://www.linkedin.com/in/ricardo-izidorio-ferreira/">
+                        <img id="logoLinkdin" src="../img/linkedin.png" width="120px">
+                    </a>
+                </div>
+            </div>
+        </footer><!--Fim do rodapé-->
+
+        <!--Scrispts-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  
+        <script src="../js/script.js"></script>
+    </body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalBuscar" tabindex="-1" role="dialog" aria-labelledby="tituloModalCentralizado" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="tituloModal">Aguardem!!!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <h6>Em breve estaremos lançando a busca por localização.</h6>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-sm botoes" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+</html>
